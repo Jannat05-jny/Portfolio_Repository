@@ -1,0 +1,394 @@
+/*for cart page */
+/* Body ko full screen height dein */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Screen ki poori height */
+  margin: 0;
+}
+
+/* Main content ko bachi hui saari jagah lene dein */
+.main-content {
+  flex: 1; /* Yeh footer ko automatically nichay dhakel dega */
+  padding: 50px;
+  margin-top: 80px;
+  text-align: center;
+}
+/*for body*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131921;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar input {
+  padding: 5px;
+  width: 300px;
+}
+
+.navbar button {
+  padding: 6px 12px;
+  background-color: #febd69;
+  border: none;
+  cursor: pointer;
+}
+.navbar button:hover {
+  padding-left: 5px;
+}
+.cart {
+  
+  font-size: 18px;
+}
+a.cart{
+  text-decoration: none;
+  color: white;
+}
+.cart-heading{
+  text-align: center;
+
+}
+button.cart-heading{
+  
+  border-radius: 5px;
+  background-color: rgb(54, 54, 171);
+  color: white;
+  height: 15px;
+  padding: 15px;
+  font-size: medium;
+  align-content: center;
+}
+
+/* Banner */
+.banner {
+  background-color: #febd69;
+  text-align: center;
+  padding: 30px;
+}
+
+.banner h1 {
+  margin-bottom: 10px;
+}
+
+/* Products */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.product {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product h3 {
+  margin: 10px 0;
+}
+
+.product button {
+  background-color: #131921;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+/*product section */
+
+.products_img_size {                  /*image sizing */
+   height: 200px;
+   width: 200px;
+   margin-left: 10px;
+   border-radius: 5px;
+   
+}
+.product-styling{           /*product images + text styling*/
+  
+    border: 1px solid #ddd !important;
+    border-radius: 8px !important;
+    padding: 10px; /* Thoda space dene ke liye */
+    margin-left: 10px;
+}
+.product-btn{
+
+  
+    border: 1px solid #ddd !important;
+    border-radius: 8px !important;
+    background-color:#febd69 ;
+    height: 30px;
+    width: 100px;
+    transition: all 0.3sec ease-in;
+    font-weight: bold;
+
+}
+.product-btn:hover{
+  margin-left: 5px;
+}
+
+/* Cart Section */
+.cart-section {
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.cart-section h2 {
+  margin-bottom: 10px;
+}
+
+#cartItems {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#cartItems li {
+  margin: 5px 0;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+/* --- FOOTER FIXES --- */
+.footer {
+  background-color: #141a1f;
+  color: white;
+  padding: 40px 20px 20px;
+  width: 100%;
+  margin-top: auto; /* Footer ko hamesha end pe rakhne ke liye */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  color: #febd69;
+  margin-bottom: 15px;
+  font-size: 17px;
+  border-bottom: 1px solid #3a4553;
+  padding-bottom: 8px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-a {
+  text-decoration: none;
+  color: #dddddd;
+  transition: all 0.3s ease;
+}
+
+.footer-a:hover {
+  color: #febd69;
+  padding-left: 5px;
+}
+
+/* Social Links Fix */
+.footer-social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.footer-social-links a {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-social-links a:hover {
+  background-color: #febd69;
+  color: #131921;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #3a4553;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #999;
+}
+
+/* --- Media Queries --- */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social-links {
+    justify-content: center;
+  }
+  
+  .footer-section {
+      margin-bottom: 30px;
+  }
+}
+
+
+/*responsive*/
+/* --- Media Queries for Responsiveness --- */
+
+/* 1. Tablets aur Laptops (992px se niche) */
+@media (max-width: 992px) {
+  .navbar input {
+    width: 200px; /* Search bar thoda chota */
+  }
+  .footer-section {
+    width: 40%; /* Ek line mein 2 columns */
+  }
+}
+
+/* 2. Mobile Phones (768px se niche) */
+@media (max-width: 768px) {
+  /* Navbar ko vertical stack karna */
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .navbar input {
+    width: 100%; /* Mobile par full width search bar */
+  }
+
+  /* Footer fixed position se hatana (taake content na chupe) */
+  .footer {
+    position: static; 
+    margin-top: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-social-links {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+/* 3. Small Mobile (480px se niche) */
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 20px;
+  }
+
+  .product {
+    width: 90%; /* Mobile par aik product poori line le ga */
+  }
+
+  .footer-social-links a {
+    height: 50px;
+    width: 50px;
+    line-height: 50px; /* Circle ke andar icon center karne ke liye */
+  }
+}
+
+/* --- Quick Fixes for your existing CSS --- */
+.product-btn {
+  transition: all 0.3s ease-in; /* 'sec' ki jagah sirf 's' likhein */
+}
+
+.footer-section ul li a {
+  transition: all 0.3s ease; /* yahan bhi 's' missing tha */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
